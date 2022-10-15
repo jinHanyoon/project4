@@ -3,81 +3,132 @@
 font-weight: 600;}
 ul,li{list-style: none;}
 a{text-decoration: none;}
-section{width: 100%;     height: 100vh;
+section{width: 100%; 
+       height: 100vh;
    }
 
 #wrap{width: 100%;}
 header{width: 100%; height: 80px;  }
 .header_in{width: 1200px; margin: 0 auto; height: 80px;
-            background-color: aqua;  }
+            }
 .header_in .logo{width: 150px; height: 80px;
      background-color: white; float: left;}
-nav{width: 900px; background-color: rgb(124, 111, 86); 
+nav{width: 900px;
     height: 80px; float: left;}
 nav ul{ width: 100%; height: 
     80px; text-align: center;  }    
 nav li{width: 150px; float: left; 
         line-height: 80px;}
+nav li a{ font-size: 14px;  color: #606060;}        
 .login{width: 100%;}
-.login .help{width: 100%; height: 40px;}
-.login .help2{width: 100%; height: 40px;}
-.login a{margin-left: 5px;}
+.login .help{width: 100%; height: 30px;}
+.login .help2{width: 100%; height: 50px;}
+.login a{margin-left: 5px; font-size: 14px;  color: #606060;}
 .main01{width: 1200px; margin: 0 auto; text-align: center; 
-    height: 400px; background-color: antiquewhite;
+    height: 400px;
     }
 .main01 .con01{height: 150px; }
 .main01 .con01 .conBox1{margin: 0 auto; width: 600px;  }
-.main01 .conBox1  li img{width: 100px; height: 50px;}
-.main01 .conBox1 li{ float: left; 
-    width: 120px; height: 80px;
+.main01 .conBox1  li img{width: 80px;
+     height: 50px;}
+.main01 .conBox1 li{ float: left; cursor: pointer; 
+     margin-top: 20px; margin-left: 5px;
+    width: 110px; height: 80px;  border-radius: 20px;
                  }
+.main01 .conBox1 li.on{background-color: #ccc; transition: 1s all;}                 
+.main01 .conBox1 li a{font-size: 14px;  color: #606060;}                 
 .con2{ height: 100px;}
 .con2 li{float: left; margin-left: 20px;
             cursor: pointer;}
-.con2 .con2_text{width: 230px; height: 90px;
+.conInfo div{padding: 10px;}            
+.con2 .con2_text{width: 210px; height: 80px;
     border-radius: 10px;
      text-align: left; 
      line-height: 40px;
-    border: 1px solid gray;}
+    border: 1px solid #569aff;}
 .con2 ul li span{ 
     color: #606060;}
 .con2 ul li p{ color: #aeaeae;}
-.con2  li:nth-child(5){ width: 150px;
-    height: 90px;
+.con2  li:nth-child(5){ width: 120px;
+    height: 100px;
     border-radius: 10px;
     line-height: 90px;
     align-items: center;
-    border: 1px solid black;
-    background-color: chartreuse;}  
+    background: #569aff;}  
+
+.conInfo2 li{width:450px; 
+     float: left;}
+.conInfo a{color: #fcf9f9d7;}     
+
+.conInfo2 ul li span{ 
+        color: #606060;}
+.conInfo2  ul li p{ color: #aeaeae;} 
+.conInfo2 li:nth-child(3){ width: 120px;
+        height: 100px;
+        border-radius: 10px;
+        line-height: 90px;
+        align-items: center;
+        background: #569aff;}         
+.con3_text{ margin: 0 auto;
+    width: 400px; height: 80px;
+    border-radius: 10px;
+     text-align: left; 
+     line-height: 40px;
+    border: 1px solid #569aff;}
+
+.conInfo3 ul li {width: 300px; float: left;
+    }   
+.con4_text{ margin: 0 auto;
+    width: 300px; height: 80px;
+    border-radius: 10px;
+     text-align: left; 
+     line-height: 40px;
+    border: 1px solid #569aff;}
+.conInfo4 ul li{width: 400px; float: left;}
+.con5_text{ margin: 0 auto;
+    width: 400px; height: 80px;
+    border-radius: 10px;
+     text-align: left; 
+     line-height: 40px;
+    border: 1px solid #569aff;}
+
+    .conInfo4 li:nth-child(3){ width: 120px;
+        height: 100px;
+        border-radius: 10px;
+        line-height: 90px;
+        align-items: center;
+        background: #569aff;}   
+
+    
  
 
 .main02{width: 1200px; height:500px; 
-     margin: 0 auto; background-color: #606060;}
+     margin: 0 auto; }
 .main02 .picture{width: 1200px; height: 500px; 
     position: relative;}
 .main02 .view{ width: 100%;
      height: 500px;}
 
 .main02 .view li{ float: left;
-     position: absolute;
+     position: absolute; border-radius: 50px;
      width: 100% ;height: 500px; top: 0;}
 .main02 .view li:nth-child(1){
     background: url(./img/church-g09efa3589_1280.jpg); z-index: 400;}
 .main02 .view li:nth-child(2){
     background: url(./img/hd-wallpaper-g5facf6ea2_1280.jpg); z-index: 300;}
-.main02 .view li:nth-child(3){
-background: url(./img/hd-wallpaper-gd3e406679_1280.jpg); z-index: 200;}
+.main02 .view li:nth-child(3){background-size: cover;
+background: url(./img/travel-g2691c7ebf_1280.jpg); z-index: 200; }
 .main02 .view .view_text1 {width: 500px; 
     height: 200px; margin: 100px; padding: 1rem;
-    font-family: sans-serif; font-weight: 600; color: rgb(68, 68, 68);}
+    font-family: sans-serif; font-weight: 600;    color: #606060;}
 .main02 .view .view_text1 p{ font-size: 20px;
 text-shadow: 3px 3px 15px white; margin-bottom: 10px;}
 .main02 .view .view_text1 h1{margin-top: 30px;
 text-shadow: 3px 3px 15px white;}
 .main02 .view .view_text1 span{font-size: 40px;
-                                color: rgb(80, 62, 62);
+    color: #606060f1;
                                 text-shadow: 3px 3px 15px white;
-                                border-bottom: 5px solid #c01c1c;}
+                                border-bottom: 5px solid #c01c1c80;}
 
 
 
@@ -85,7 +136,7 @@ text-shadow: 3px 3px 15px white;}
 
 .main02 .view .view_text2 {width: 400px; 
                             height: 200px; margin: 100px; padding: 1rem;
-                            font-family: sans-serif; font-weight: 600; color: white;}
+                            font-family: sans-serif; font-weight: 600;color: #f8f8f8c5;;}
 .main02 .view .view_text2 p{ font-size: 25px;
     text-shadow: 3px 3px 15px white; margin: 10px 0;}
 .main02 .view .view_text2 h1{ font-size: 30px;
@@ -98,17 +149,17 @@ text-shadow: 3px 3px 15px white;}
                 border:2px solid #ccc;  text-align: center;
                 font-size: 35px; text-shadow: 3px 3px 15px white;
             margin-top: 30px; font-family: sans-serif;
-            color: white;}   
+            color: #f8f8f8ad;}   
 
 
-.main02 .view .view_text3 {width: 400px; color: rgb(90, 92, 89);
+.main02 .view .view_text3 {width: 900px; color: #575454c2;
                 height: 200px; margin: 100px auto; padding: 1rem;
-                text-align: center;
+                text-align: right;
                 font-family: sans-serif; font-weight: 600;}
 .main02 .view .view_text3 p{ font-size: 25px; margin-top: 10px;
             ; margin-bottom: 10px;}
  .main02 .view .view_text3 h1{ font-size: 35px;
-    color: #ddca1d; text-shadow: 3px 3px 15px;
+    color: #5754548a; 
            }
 .main02 .view .view_text3 span{font-size: 45px;
 }
@@ -117,17 +168,33 @@ text-shadow: 3px 3px 15px white;}
                 border:2px solid rgb(75, 87, 63);;  text-align: center;
                 font-size: 35px; text-shadow: 3px 3px 15px white;
             margin-top: 30px; font-family: sans-serif;
-          color:   rgb(49, 82, 16);}   
+            color: #575454; }   
             
 
 
 
-.main_2_btn{width: 180px; background-color: #aeaeae;
+.main_2_btn{width: 200px; 
     position: absolute; left: 40%;      
-    height: 50px; text-align: center;}
-.main_2_btn li{width: 40px; height: 20px; background-color: rgb(122, 96, 96);
-     display: inline-block; margin-left: 15px; border-radius: 5px;
+    height: 20px; text-align: center;}
+.main_2_btn li{width: 40px; height: 20px; background-color:rgb(102, 100, 100);
+     display: inline-block; margin:20px 0 0 20px; border-radius: 5px;
         cursor: pointer;}
-.main_2_btn li.on{width: 20px; background-color: blue;
+.main_2_btn li.on{width: 20px; background-color: black;
     transition: all 1s;}
 
+.main03{width: 1200px; margin: 0 auto; height: 100vh;
+        }
+.main03_title{   height: 70px;     color: #606060;
+                    line-height: 70px;
+    text-align: center;}
+
+.main03 li{width: 360px; height: 400px; float: left;
+    margin-left: 20px;border-radius: 5px;
+    border: 1px solid rgb(117, 107, 107);}
+.main03 li img{width: 360px; height: 270px;}
+.main03 li p{margin:10px;
+    color: #606060;
+    font-weight: 400;}
+.main03 li span{margin: 10px;
+            color: black;
+            font-weight: bold;}

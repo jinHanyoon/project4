@@ -15,6 +15,7 @@
 <script>
     $(document).ready(function(){
         current = 0;
+        $('.conBox1 li').eq(0).addClass('on')
         $('.main_2_btn li').eq(0).addClass('on');
 
         $('.conInfo2 li').hide()
@@ -25,6 +26,9 @@
 
         $('.conBox1 li').click(function(){
             n=$(this).index()
+            $('.conBox1 li').removeClass('on')
+            $('.conBox1 li').eq(n).addClass('on')
+     
             console.log(n)})
  
        $('.conBox1 li').eq(0).click(function(){
@@ -100,7 +104,7 @@
                 <li><a href="#">항공</a></li>
                 <li><a href="#">숙박</a></li>
                 <li><a href="#">트립</a></li>
-                <li><a href="#">카페패스</a></li>
+                <li><a href="#">카페</a></li>
                 <li><a href="#">맛집</a></li>
             </ul>
         </nav>
@@ -122,28 +126,28 @@
                 <div class="con01">
                     <ul class="conBox1">
                         <li> 
-                            <img src="./img/btn_firstpage.gif" alt="">
+                            <img src="./img/icons8-의자-가마-48.png" alt="">
                             <figure>
                              <a href="#">렌터카검색</a>
                             </figure>
                         </li>
                         <li> 
-                            <img src="#" alt="">
+                            <img src="./img/icons8-airplane-48.png" alt="">
                             <figure>
                              <a href="#">항공검색</a>
                             </figure>
                         </li>   <li> 
-                            <img src="#" alt="">
+                            <img src="./img/icons8-족쇄-100.png" alt="">
                             <figure>
                              <a href="#">맛집검색</a>
                             </figure>
                         </li>   <li> 
-                            <img src="#" alt="">
+                            <img src="./img/icons8-커피-이동합니다-100.png" alt="">
                             <figure>
                              <a href="#">카페검색</a>
                             </figure>
                         </li>   <li> 
-                            <img src="#" alt="">
+                            <img src="./img/icons8-집-100.png" alt="">
                             <figure>
                              <a href="#">숙박검색</a>
                             </figure>
@@ -186,29 +190,19 @@
                         </ul>
                         <ul class="conInfo2">
                             <li>
-                                <div class="con2_text">
-                                    <span>대여/반납일22</span>
-                                    <p>대여/반납일을 선택해주세요.</p>
+                                <div class="con3_text">
+                                    <span>출발/도착</span>
+                                    <p>출발/도착일을 선택해주세요.</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="con2_text">
-                                    <span>대여/반납시간22</span>
-                                    <p>시간을 선택해주세요.</p>
+                        
+                                <li>
+                                <div class="con3_text">
+                                    <span>탑승일</span>
+                                    <p>탑승일을 선택해주세요.</p>
                                 </div>
                             </li> 
-                                <li>
-                                <div class="con2_text">
-                                    <span>차량조건22</span>
-                                    <p>조건을 선택해주세요.</p>
-                                </div>
-                            </li> 
-                                <li>
-                                <div class="con2_text">
-                                    <span>운전자 조건</span>
-                                    <p>운전자 조건을 선택해주세요.</p>
-                                </div>
-                            </li>
+                          
                             <li>
                                 <a href="#">검색</a></li>
                     
@@ -217,28 +211,24 @@
                         
                         <ul class="conInfo3">
                             <li>
-                                <div class="con2_text">
-                                    <span>대여/반납일3</span>
-                                    <p>대여/반납일을 선택해주세요.</p>
+                                <div class="con4_text">
+                                    <span>여행지</span>
+                                    <p>여행지를 선택해주세요.</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="con2_text">
-                                    <span>대여/반납시간33</span>
-                                    <p>시간을 선택해주세요.</p>
+                                <div class="con4_text">
+                                    <span>지역</span>
+                                    <p>지역을 선택해주세요.</p>
                                 </div>
                             </li> 
                                 <li>
-                                <div class="con2_text">
-                                    <span>차량조건33</span>
-                                    <p>조건을 선택해주세요.</p>
+                                <div class="con4_text">
+                                    <span>음식</span>
+                                    <p>음식을 선택해주세요.</p>
                                 </div>
                             </li> 
                                 <li>
-                                <div class="con2_text">
-                                    <span>운전자 조건33</span>
-                                    <p>운전자 조건을 선택해주세요.</p>
-                                </div>
                             </li>
                             <li>
                                 <a href="#">검색</a></li>
@@ -247,28 +237,17 @@
                         </ul>
                         <ul class="conInfo4">
                             <li>
-                                <div class="con2_text">
-                                    <span>대여/반납일4</span>
-                                    <p>대여/반납일을 선택해주세요.</p>
+                                <div class="con5_text">
+                                    <span>여행지</span>
+                                    <p>여행지를 선택해주세요.</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="con2_text">
-                                    <span>대여/반납시간44</span>
-                                    <p>시간을 선택해주세요.</p>
+                                <div class="con5_text">
+                                    <span>지역</span>
+                                    <p>지역을 선택해주세요.</p>
                                 </div>
                             </li> 
-                                <li>
-                                <div class="con2_text">
-                                    <span>차량조건44</span>
-                                    <p>조건을 선택해주세요.</p>
-                                </div>
-                            </li> 
-                                <li>
-                                <div class="con2_text">
-                                    <span>운전자 조건44</span>
-                                    <p>운전자 조건을 선택해주세요.</p>
-                                </div>
                             </li>
                             <li>
                                 <a href="#">검색</a></li>
@@ -278,26 +257,26 @@
                         <ul class="conInfo5">
                             <li>
                                 <div class="con2_text">
-                                    <span>대여/반납일5</span>
-                                    <p>대여/반납일을 선택해주세요.</p>
+                                    <span>지역</span>
+                                    <p>지역을 선택해주세요.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="con2_text">
-                                    <span>대여/반납시간55</span>
-                                    <p>시간을 선택해주세요.</p>
+                                    <span>입실/퇴실</span>
+                                    <p>입실/퇴실을 선택해주세요.</p>
                                 </div>
                             </li> 
                                 <li>
                                 <div class="con2_text">
-                                    <span>차량조건55</span>
+                                    <span>인원</span>
+                                    <p>인원을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>호텔/풀빌라/모텔</span>
                                     <p>조건을 선택해주세요.</p>
-                                </div>
-                            </li> 
-                                <li>
-                                <div class="con2_text">
-                                    <span>운전자 조건55</span>
-                                    <p>운전자 조건을 선택해주세요.</p>
                                 </div>
                             </li>
                             <li>
@@ -348,6 +327,39 @@
 
             </div>
 
+        </section>
+        <section>
+            <div class="main03">
+                <div class="main03_con">
+                    <h1 class="main03_title">감성 숙소 확인하기</h1>
+                    <ul class="main03_info">
+                        <li> 
+                            <img src="./img/home1.jpg" alt="">
+                            <figure>
+                             <span>여기야여기 </span>   
+                             <p>#가족여행 #넓은 실내</p> 
+                            <p>부산광역시 >연제구 > 연산동</p>
+                            </figure>
+                        </li>
+                        <li> 
+                            <img src="./img/home2.jpg" alt="">
+                            <figure>
+                             <span>여기다모여 </span>   
+                             <p>#감성숙소 #야외 수영장</p> 
+                            <p>경상남도 >창원시 > 성산구</p>
+                            </figure>
+                        </li>
+                           <li> 
+                            <img src="./img/home3.jpg" alt="">
+                            <figure>
+                             <span>숙소숙소 </span>   
+                             <p>#깨끗한 #애견</p> 
+                            <p>경상남도 >마산시 > 합성동</p>
+                            </figure>
+                        </li>
+                </div>
+                
+            </div>
         </section>
     </div>
     
