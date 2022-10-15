@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/main.js">
+    </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+    $(document).ready(function(){
+        current = 0;
+        $('.main_2_btn li').eq(0).addClass('on');
+
+        $('.conInfo2 li').hide()
+        $('.conInfo3 li').hide()
+        $('.conInfo4 li').hide()
+        $('.conInfo5 li').hide()
+
+
+        $('.conBox1 li').click(function(){
+            n=$(this).index()
+            console.log(n)})
+ 
+       $('.conBox1 li').eq(0).click(function(){
+        $('.conInfo1 li').fadeIn()
+        $('.conInfo2 li').hide()
+        $('.conInfo3 li').hide()
+        $('.conInfo4 li').hide()
+        $('.conInfo5 li').hide() })
+
+        $('.conBox1 li').eq(1).click(function(){
+            $('.conInfo1 li').hide()
+            $('.conInfo2 li').fadeIn()
+           $('.conInfo3 li').hide()
+           $('.conInfo4 li').hide()
+           $('.conInfo5 li').hide()
+
+        })
+        $('.conBox1 li').eq(2).click(function(){
+            $('.conInfo1 li').hide()
+            $('.conInfo2 li').hide()
+           $('.conInfo3 li').fadeIn()
+            $('.conInfo4 li').hide()
+            $('.conInfo5 li').hide()
+
+        })
+        $('.conBox1 li').eq(3).click(function(){
+         $('.conInfo1 li').hide()
+         $('.conInfo2 li').hide()
+         $('.conInfo3 li').hide()
+         $('.conInfo4 li').fadeIn()
+         $('.conInfo5 li').hide()
+        })
+        $('.conBox1 li').eq(4).click(function(){
+         $('.conInfo1 li').hide()
+         $('.conInfo2 li').hide()
+         $('.conInfo3 li').hide()
+         $('.conInfo4 li').hide()
+         $('.conInfo5 li').fadeIn()
+
+
+        })
+        $('.main_2_btn li').click(function(){
+               var i= $(this).index(); 
+               move(i);
+               console.log(i,'클릭됨')
+            })
+            
+            function move(i){
+                if(current == i)return;//
+                var currentE1 = $('.picture ul li').eq(current);
+                var nextE1 = $('.picture ul li').eq(i);
+                console.log('작동됨')
+
+                currentE1.css({opacity:1}).stop().animate({opacity:0})
+                nextE1.css({opacity:0}).stop().animate({opacity:1})
+                         
+                $('.main_2_btn li').removeClass('on');
+                $('.main_2_btn li').eq(i).addClass('on');
+      
+                current = i;
+
+            }
+    })
+</script>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_in">
+                <h1 class="logo">logo</h1>
+                <nav>
+                <ul>
+                <li><a href="#">렌터카</a></li>
+                <li><a href="#">항공</a></li>
+                <li><a href="#">숙박</a></li>
+                <li><a href="#">트립</a></li>
+                <li><a href="#">카페패스</a></li>
+                <li><a href="#">맛집</a></li>
+            </ul>
+        </nav>
+            <div class="login">
+                <div class="help">
+                <a href="#">이벤트</a>
+                <a href="#">고객센터</a>
+            </div>
+            <div class="help2">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+
+            </div>
+            </div>
+            </div>
+        </header>
+        <section>
+            <div class="main01">
+                <div class="con01">
+                    <ul class="conBox1">
+                        <li> 
+                            <img src="./img/btn_firstpage.gif" alt="">
+                            <figure>
+                             <a href="#">렌터카검색</a>
+                            </figure>
+                        </li>
+                        <li> 
+                            <img src="#" alt="">
+                            <figure>
+                             <a href="#">항공검색</a>
+                            </figure>
+                        </li>   <li> 
+                            <img src="#" alt="">
+                            <figure>
+                             <a href="#">맛집검색</a>
+                            </figure>
+                        </li>   <li> 
+                            <img src="#" alt="">
+                            <figure>
+                             <a href="#">카페검색</a>
+                            </figure>
+                        </li>   <li> 
+                            <img src="#" alt="">
+                            <figure>
+                             <a href="#">숙박검색</a>
+                            </figure>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+                <div class="con2">
+                    <div class="conInfo">
+                        <ul class="conInfo1">
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납일</span>
+                                    <p>대여/반납일을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납시간</span>
+                                    <p>시간을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>차량조건</span>
+                                    <p>조건을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>운전자 조건</span>
+                                    <p>운전자 조건을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">검색</a></li>
+                    
+                            
+                        </ul>
+                        <ul class="conInfo2">
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납일22</span>
+                                    <p>대여/반납일을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납시간22</span>
+                                    <p>시간을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>차량조건22</span>
+                                    <p>조건을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>운전자 조건</span>
+                                    <p>운전자 조건을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">검색</a></li>
+                    
+                            
+                        </ul>
+                        
+                        <ul class="conInfo3">
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납일3</span>
+                                    <p>대여/반납일을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납시간33</span>
+                                    <p>시간을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>차량조건33</span>
+                                    <p>조건을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>운전자 조건33</span>
+                                    <p>운전자 조건을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">검색</a></li>
+                    
+                            
+                        </ul>
+                        <ul class="conInfo4">
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납일4</span>
+                                    <p>대여/반납일을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납시간44</span>
+                                    <p>시간을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>차량조건44</span>
+                                    <p>조건을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>운전자 조건44</span>
+                                    <p>운전자 조건을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">검색</a></li>
+                    
+                            
+                        </ul>
+                        <ul class="conInfo5">
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납일5</span>
+                                    <p>대여/반납일을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con2_text">
+                                    <span>대여/반납시간55</span>
+                                    <p>시간을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>차량조건55</span>
+                                    <p>조건을 선택해주세요.</p>
+                                </div>
+                            </li> 
+                                <li>
+                                <div class="con2_text">
+                                    <span>운전자 조건55</span>
+                                    <p>운전자 조건을 선택해주세요.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">검색</a></li>
+                    
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main02">
+                <div class="picture">
+                    <ul class="view">
+                        <li>
+                            <div class="view_text1">
+                                <span>여름휴가 놓친사람 주목!</span>
+                                <h1>더 멋진 유럽휴가가</h1>
+                                <p>당신을 기다립니다!</p>
+                            </div>
+                        </li>
+                        <li>  <div class="view_text2">
+                            <h1>인생 힐링 여행지가</h1>
+                            <p>당신을 기다립니다!</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </li>
+                        <li>
+                           <div class="view_text3">
+                            <span>잘 먹고! 잘 쉬는!</span>
+                            <h1>인생 힐링 여행지가</h1>
+                            <p>당신을 기다립니다!</p>
+                            <a href="#">Read more</a>
+                            
+                        </div>
+                        </li>
+                    </ul>
+                    <div class="main_2_btn">
+                        <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    
+</body>
+</html>
