@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js/main.js">
-    </script>
+    <script src="./js/main.js"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
@@ -15,6 +14,8 @@
 <script>
     $(document).ready(function(){
         current = 0;
+        $('.main03_btn li').eq(0).addClass('on')
+        $('.main04_btn li').eq(0).addClass('on')
         $('.conBox1 li').eq(0).addClass('on')
         $('.main_2_btn li').eq(0).addClass('on');
 
@@ -91,6 +92,42 @@
                 current = i;
 
             }
+
+       $('.main03_btn li').click(function(){
+        var v=$(this).index()
+        slider01(v)
+        function slider01(v){
+                var posx = (-1150)*v +'px';
+                $('.main03_view > ul').animate({left:posx},800)
+                     $('.main03_btn li').removeClass('on')
+
+                $('.main03_btn li').eq(v).addClass('on')
+            }
+
+       })     
+       $('.main04_btn li').click(function(){
+        var v02=$(this).index()
+        slider02(v02)
+        function slider02(v02){
+            var posx=(-1150)*v02+'px';
+            $('.main04_view > ul').animate({left:posx},800)
+            $('.main04_btn li').removeClass('on')
+            $('.main04_btn li').eq(v02).addClass('on')
+        }
+        
+       })
+       $('.main05_info li').hover(function(){
+        $(this).css({opacity:0.8});
+       },function(){
+        $(this).css({opacity:1})
+
+       }
+       )
+      
+
+
+
+
     })
 </script>
 <body>
@@ -331,10 +368,13 @@
         <section>
             <div class="main03">
                 <div class="main03_con">
-                    <h1 class="main03_title">감성 숙소 확인하기</h1>
+                    <h1 class="main03_title">인기 숙소 확인하기</h1>
+                    <div class="main03_view">
                     <ul class="main03_info">
                         <li> 
                             <img src="./img/home1.jpg" alt="">
+                            <div class="medal1"></div>
+
                             <figure>
                              <span>여기야여기 </span>   
                              <p>#가족여행 #넓은 실내</p> 
@@ -343,6 +383,7 @@
                         </li>
                         <li> 
                             <img src="./img/home2.jpg" alt="">
+                            <div class="medal2"></div>
                             <figure>
                              <span>여기다모여 </span>   
                              <p>#감성숙소 #야외 수영장</p> 
@@ -351,14 +392,173 @@
                         </li>
                            <li> 
                             <img src="./img/home3.jpg" alt="">
+                            <div class="medal3"></div>
                             <figure>
-                             <span>숙소숙소 </span>   
-                             <p>#깨끗한 #애견</p> 
+                             <span>예쁜숙소 </span>   
+                             <p>#깨끗한 #애견동반</p> 
                             <p>경상남도 >마산시 > 합성동</p>
                             </figure>
                         </li>
+                        <li> 
+                            <img src="./img/main0304.jpg" alt="">
+                            <div class="medal4"></div>
+                            <figure>
+                             <span>알파트 </span>   
+                             <p>#2박이상 #신규오픈</p> 
+                            <p>서울특별시 >강남구 > 압구정동</p>
+                            </figure>
+                        </li>
+                        <li> 
+                            <img src="./img/main0305.jpg" alt="">
+                            <div class="medal4"></div>
+                            <figure>
+                             <span>하와이 </span>   
+                             <p>#감성숙소 #야외 수영장</p> 
+                            <p>경상남도>진주시> 차없는거리</p>
+                            </figure>
+                        </li>
+                           <li> 
+                            <img src="./img/main0306.jpg" alt="">
+                            <div class="medal4"></div>
+                            <figure>
+                             <span>호르텔 </span>   
+                             <p>#프라이빗 공간 #호캉스</p> 
+                            <p>부산광역시 >해운대구 > 반여1동</p>
+                            </figure>
+                        </li>
+                    </ul>
+                        </div>
+               
+                    <ul class="main03_btn">
+                     <li></li>
+                     <li></li>
+                 </ul>                 
+                    </div>
+                    </div>
+        </section>
+        <section>
+            <div class="main04">
+                  <div class="main04_con">
+                    <h1 class="main04_title">인기 카페 확인하기</h1>
+                    <div class="main04_view">
+                    <ul class="main04_info">
+                        <li> 
+                            <img src="./img/view-g2a6198b7f_640.jpg" alt="">
+                            <div class="medal1"></div>
+
+                            <figure>
+                             <span>순이네커피집 </span>   
+                             <p>#루프탑 #시티뷰</p> 
+                            <p>부산광역시 >연제구 > 연산동</p>
+                            </figure>
+                        </li>
+                        <li> 
+                            <img src="./img/main0402.jpg" alt="">
+                            <div class="medal2"></div>
+                            <figure>
+                             <span>GLONOJAD </span>   
+                             <p>#낮에는카페 #밤에는 펍</p> 
+                            <p>경상남도 >창원시 > 성산구</p>
+                            </figure>
+                        </li>
+                           <li> 
+                            <img src="./img/main0403.jpg" alt="">
+                            <div class="medal3"></div>
+                            <figure>
+                             <span>도시카페 </span>   
+                             <p>#더치커피 #야외 테이블</p> 
+                            <p>경상남도 >마산시 > 합성동</p>
+                            </figure>
+                        </li>
+                        <li> 
+                            <img src="./img/main0404.jpg" alt="">
+                            <div class="medal4"></div>
+                            <figure>
+                             <span>코오피 </span>   
+                             <p>#식사가능 #커피</p> 
+                            <p>경상남도 >창원시 > 의창구</p>
+                            </figure>
+                        </li>
+                        <li> 
+                            <img src="./img/main0405.jpg" alt="">
+                            <div class="medal4"></div>
+                            <figure>
+                             <span>브러언치 </span>   
+                             <p>#브런치 카페 #야외 뷰</p> 
+                            <p>부산광역시 >동래구 > 온천동</p>
+                            </figure>
+                        </li>
+                           <li> 
+                            <img src="./img/main0406.jpg" alt="">
+                            <div class="medal4"></div>
+                            <figure>
+                             <span>어먹피커 </span>   
+                             <p>#테라스 #야외 테이블</p> 
+                            <p>부산광역시 >해운대구 > 송정동</p>
+                            </figure>
+                        </li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="main04_btn">
+                        <li></li>
+                        <li></li>
+                        </ul>
                 </div>
-                
+            </div>
+        </section>
+        <section>
+            <div class="main05">
+                <div class="main05_info">
+                    <h1>추천 여행지를 확인하세요!</h1>
+                    <ul>
+                        <li>
+                            <div class="main05_text">
+                                <h2>시원한 바다로!</h2>
+                                <h2>맑은 바다에서</h2>
+                                <p>여행을 즐겨보세요!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main05_text">
+                                <h2>나만의 힐링장소</h2>
+                                <h2>프라이빗하게</h2>
+                                <p>휴가를 즐겨보세요!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main05_text">
+                                <h2>집돌이 집순이들 주목</h2>
+                                <h2>호텔안에서</h2>
+                                <p>모든것을 즐겨보세요!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main05_text">
+                                <h2>양들과함께</h2>
+                                <h2>양떼목장에서</h2>
+                                <p>아름다운 여행을!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main05_text">
+                                <h2>부모님 효도여행!</h2>
+                                <h2>아름다운 추억을</h2>
+                                <p>남겨드려요</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main05_text">
+                                <h2>배낭여행 맛집!</h2>
+                                <h2>전국/해외</h2>
+                                <p>확인하기</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+          
+
             </div>
         </section>
     </div>

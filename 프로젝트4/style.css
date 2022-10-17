@@ -1,7 +1,8 @@
 *{margin: 0; padding: 0;
     font-family: sans-serif;
 font-weight: 600;}
-ul,li{list-style: none;}
+ul,li{list-style: none;
+   }
 a{text-decoration: none;}
 section{width: 100%; 
        height: 100vh;
@@ -45,6 +46,7 @@ nav li a{ font-size: 14px;  color: #606060;}
     border-radius: 10px;
      text-align: left; 
      line-height: 40px;
+     box-shadow: 5px 5px 10px rgb(141, 138, 138);
     border: 1px solid #569aff;}
 .con2 ul li span{ 
     color: #606060;}
@@ -54,6 +56,7 @@ nav li a{ font-size: 14px;  color: #606060;}
     border-radius: 10px;
     line-height: 90px;
     align-items: center;
+    box-shadow: 5px 5px 10px rgb(141, 138, 138);
     background: #569aff;}  
 
 .conInfo2 li{width:450px; 
@@ -68,12 +71,14 @@ nav li a{ font-size: 14px;  color: #606060;}
         border-radius: 10px;
         line-height: 90px;
         align-items: center;
+        box-shadow: 5px 5px 10px rgb(141, 138, 138);
         background: #569aff;}         
 .con3_text{ margin: 0 auto;
     width: 400px; height: 80px;
     border-radius: 10px;
      text-align: left; 
      line-height: 40px;
+     box-shadow: 5px 5px 10px rgb(141, 138, 138);
     border: 1px solid #569aff;}
 
 .conInfo3 ul li {width: 300px; float: left;
@@ -83,6 +88,7 @@ nav li a{ font-size: 14px;  color: #606060;}
     border-radius: 10px;
      text-align: left; 
      line-height: 40px;
+     box-shadow: 5px 5px 10px rgb(141, 138, 138);
     border: 1px solid #569aff;}
 .conInfo4 ul li{width: 400px; float: left;}
 .con5_text{ margin: 0 auto;
@@ -90,12 +96,14 @@ nav li a{ font-size: 14px;  color: #606060;}
     border-radius: 10px;
      text-align: left; 
      line-height: 40px;
+     box-shadow: 5px 5px 10px rgb(141, 138, 138);
     border: 1px solid #569aff;}
 
     .conInfo4 li:nth-child(3){ width: 120px;
         height: 100px;
         border-radius: 10px;
         line-height: 90px;
+        box-shadow: 5px 5px 10px rgb(141, 138, 138);
         align-items: center;
         background: #569aff;}   
 
@@ -109,7 +117,7 @@ nav li a{ font-size: 14px;  color: #606060;}
 .main02 .view{ width: 100%;
      height: 500px;}
 
-.main02 .view li{ float: left;
+.main02 .view li{ float: left;   box-shadow: 5px 5px 10px black;
      position: absolute; border-radius: 50px;
      width: 100% ;height: 500px; top: 0;}
 .main02 .view li:nth-child(1){
@@ -176,25 +184,165 @@ text-shadow: 3px 3px 15px white;}
 .main_2_btn{width: 200px; 
     position: absolute; left: 40%;      
     height: 20px; text-align: center;}
-.main_2_btn li{width: 40px; height: 20px; background-color:rgb(102, 100, 100);
+.main_2_btn li{width: 40px; height: 10px;background-color: rgb(88, 79, 79);
      display: inline-block; margin:20px 0 0 20px; border-radius: 5px;
         cursor: pointer;}
-.main_2_btn li.on{width: 20px; background-color: black;
+.main_2_btn li.on{width: 20px; background-color: #569aff;
     transition: all 1s;}
+
+
 
 .main03{width: 1200px; margin: 0 auto; height: 100vh;
         }
 .main03_title{   height: 70px;     color: #606060;
                     line-height: 70px;
     text-align: center;}
+.main03 li{cursor: pointer;}
+.main03_view{width: 1150px; height: 450px;
+                position: relative;  overflow: hidden;
+              }    
+.main03_info{width: 2300px; height: 400px;
+            position: absolute; left: 0; top: 0;}                
 
-.main03 li{width: 360px; height: 400px; float: left;
-    margin-left: 20px;border-radius: 5px;
-    border: 1px solid rgb(117, 107, 107);}
-.main03 li img{width: 360px; height: 270px;}
-.main03 li p{margin:10px;
+.main03_info li{width: 360px; height: 400px; float: left;
+    margin-left: 20px;border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(158, 157, 157);
+    border: 1px solid #ccc;
+position: relative;}
+.main03_info .medal1{width: 60px; height: 50px;
+        background: url(./img/icons8-1st-place-medal-48.png);
+        position: absolute; left: 10px;
+        top: -10px;} 
+.main03_info .medal2{width: 60px; height: 50px;
+            background: url(./img/icons8-2nd-place-medal-48.png);
+            position: absolute; left: 10px;
+            top: -10px;}
+.main03_info .medal3{width: 60px; height: 50px;
+                background: url(./img/icons8-3rd-place-medal-48.png);
+                position: absolute; left: 10px;
+                top: -10px;}      
+.main03_info .medal4{width: 60px; height: 50px;
+                    background: url(./img/icons8-sports-medal-48\ \(1\).png);
+                    position: absolute; left: 10px;
+                    top: -10px;}                                            
+.main03 li img{width: 360px; height: 270px;
+                border-radius: 15px;
+                box-shadow: 5px 5px 15px rgb(63, 62, 62);
+                margin-bottom: 15px;}
+.main03_info li p{margin:10px;
     color: #606060;
     font-weight: 400;}
-.main03 li span{margin: 10px;
+.main03_info li span{margin: 20px 10px 10px 10px;
             color: black;
             font-weight: bold;}
+
+
+
+.main03_btn{ text-align: center;}
+.main03_btn li{width: 50px; height: 10px; margin-left: 10px;
+             display: inline-block; background-color: rgb(88, 79, 79);
+              }
+.main03_btn li.on{background-color: #569aff;}
+
+
+
+.main04{width: 1200px; height: 100vh; 
+    margin: 0 auto;}    
+.main04 li{cursor: pointer;}
+
+.main04_title{height: 70px;
+         color: #606060;
+        line-height: 70px;
+text-align: center;}
+.main04_view{width: 1150px; height: 450px;
+            position: relative; overflow: hidden;}
+.main04 figure{}
+.main04_info{width: 2300px; height: 400px;
+            position: absolute; left: 0; top:0;}
+
+.main04_info li{width: 360px; height: 400px; float: left;
+margin-left: 20px;border-radius: 15px; 
+box-shadow: 5px 5px 15px rgb(158, 157, 157);
+position: relative;
+border: 1px solid #ccc;
+}
+.main04 li img{width: 360px; border-radius: 15px;
+     height: 270px; margin-bottom: 15px;
+     box-shadow: 5px 5px 15px rgb(63, 62, 62);}
+.main04_info li p{margin:10px;
+color: #606060;
+font-weight: 400;}
+.main04_info li span{ margin: 20px 10px 10px 10px;
+color: black;
+font-weight: bold;}
+.main04_info .medal1{width: 60px; height: 50px;
+    background: url(./img/icons8-1st-place-medal-48.png);
+    position: absolute; left: 10px;
+    top: -10px;} 
+.main04_info .medal2{width: 60px; height: 50px;
+        background: url(./img/icons8-2nd-place-medal-48.png);
+        position: absolute; left: 10px;
+        top: -10px;}
+.main04_info .medal3{width: 60px; height: 50px;
+            background: url(./img/icons8-3rd-place-medal-48.png);
+            position: absolute; left: 10px;
+            top: -10px;}      
+.main04_info .medal4{width: 60px; height: 50px;
+                background: url(./img/icons8-sports-medal-48\ \(1\).png);
+                position: absolute; left: 10px;
+                top: -10px;}                                            
+
+
+
+.main04_btn{ text-align: center;}
+.main04_btn li{width: 50px; height: 10px; margin-left: 10px;
+    display: inline-block; background-color: rgb(88, 79, 79);}
+.main04_btn li.on{background-color: #569aff;}
+
+
+.main05 {width: 1200px; height: 100vh; 
+            margin: 0 auto; }
+.main05 .main05_info {}
+.main05 .main05_info h1{text-align: center;
+    color: #606060;}
+.main05 .main05 ul{text-align: center;}
+.main05 .main05_info li{width: 370px; height: 360px;
+                        border-radius: 15px; position: relative;     
+                        float: left;
+                        margin:10px 0 0 20px;
+                        box-shadow: 5px 5px 15px rgb(63, 62, 62);
+                        cursor: pointer;
+                      }
+.main05 .main05_info li::before{content: "";
+                                opacity: 0.4;
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                right: 0px;
+                                bottom: 0px;
+                                border-radius: 15px;
+                                background-color: #000;}                                    
+
+.main05 .main05_info li:nth-child(1){background: url(./img/main0501.jpg);
+                                    background-size: cover;
+                                    }
+.main05 .main05_info li:nth-child(2){background: url(./img/main0502.jpg);
+    background-size: cover;
+    }
+.main05 .main05_info li:nth-child(3){background:url(./img/main0503.jpg);
+    background-size: cover;}
+.main05 .main05_info li:nth-child(4){background: url(./img/main0504.jpg);
+    background-size: cover;}
+.main05 .main05_info li:nth-child(5){background:url(./img/main0505.jpg);
+    background-size: cover; background-position: center;}
+.main05 .main05_info li:nth-child(6){background: url(./img/main0506.jpg);
+    background-size: cover;}
+.main05 .main05_text{ position: absolute;
+    width: 100%; bottom: 30px;
+    color: #f8f8f8; margin-left: 20px;}
+
+.main05 .main05_text h2{margin-top: 10px;}
+.main05 .main05_text p{}
+
+
+     
