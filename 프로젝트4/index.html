@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>여행지</title>
     <script src="./js/main.js"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
         $('.main03_btn li').eq(0).addClass('on')
         $('.main04_btn li').eq(0).addClass('on')
         $('.conBox1 li').eq(0).addClass('on')
+        $('.conBox1 li a').eq(0).addClass('on')
         $('.main_2_btn li').eq(0).addClass('on');
 
         $('.conInfo2 li').hide()
@@ -24,13 +25,23 @@
         $('.conInfo4 li').hide()
         $('.conInfo5 li').hide()
 
-
+        $('nav li').hover(function(){
+            var nav=$(this).index();
+            $('nav li a').eq(nav).addClass('on')
+            $('nav li').eq(nav).addClass('on')
+        },function(){
+            $('nav li').removeClass('on')
+            $('nav li a').removeClass('on')
+        }
+        )
         $('.conBox1 li').click(function(){
             n=$(this).index()
             $('.conBox1 li').removeClass('on')
             $('.conBox1 li').eq(n).addClass('on')
+            $('.conBox1 li a').removeClass('on')
+            $('.conBox1 li a').eq(n).addClass('on')
      
-            console.log(n)})
+        })
  
        $('.conBox1 li').eq(0).click(function(){
         $('.conInfo1 li').fadeIn()
@@ -556,11 +567,25 @@
                         </li>
 
                     </ul>
-                </div>
-          
-
+                </div> 
             </div>
         </section>
+            <footer>
+                <div class="footer_text">
+                    <p>개인정보처리방침 이용약관</p>
+                  <p>  대표이사 : 홍길동 사업자등록번호 : 000-00-00000 사업자정보조회 통신판매신고</p>
+                  <p> 제0000-부산-00호 사업자 등록번호 : 제0000-00호</p> 
+                    
+                  <span> 부산광역시 부산연산동 00, 0층 (우)0000</span>
+                    
+                   <p>(주)회사는 개별 항공권 및 숙박 상품에 대하여 통신판매중개자로서 </p>
+                    <p>통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래 등에 대해 책임을 지지 않습니다.</p> 
+                    <p>(주)회사는 렌터카 파트너사가 제공하는 일부 렌터카에 대하여 통신판매중개자의 지위를 가지며, 해당 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
+                    
+                   <span> AAAAA ⓒ AAAA AAA AAAA AAAAA</span>
+
+                </div>
+            </footer>
     </div>
     
 </body>

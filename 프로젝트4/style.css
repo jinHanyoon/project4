@@ -18,26 +18,42 @@ nav{width: 900px;
     height: 80px; float: left;}
 nav ul{ width: 100%; height: 
     80px; text-align: center;  }    
-nav li{width: 150px; float: left; 
+nav li{width: 150px; float: left; border-radius: 5px; 
         line-height: 80px;}
-nav li a{ font-size: 14px;  color: #606060;}        
+nav li a{ font-size: 14px;  color: #606060;}
+nav li.on{background-color: #569aff;
+        transition: 1s all;} 
+nav li a.on{color: #f8f8f8;
+        transition: 1s all;
+}       
 .login{width: 100%;}
 .login .help{width: 100%; height: 30px;}
+.login .help a{font-size: 10px;
+    color: #60606080;
+ }
 .login .help2{width: 100%; height: 50px;}
+
 .login a{margin-left: 5px; font-size: 14px;  color: #606060;}
+
+
+
+
 .main01{width: 1200px; margin: 0 auto; text-align: center; 
     height: 400px;
     }
 .main01 .con01{height: 150px; }
-.main01 .con01 .conBox1{margin: 0 auto; width: 600px;  }
+.main01 .con01 .conBox1{margin: 0 auto; width: 600px;}
 .main01 .conBox1  li img{width: 80px;
      height: 50px;}
 .main01 .conBox1 li{ float: left; cursor: pointer; 
      margin-top: 20px; margin-left: 5px;
     width: 110px; height: 80px;  border-radius: 20px;
                  }
-.main01 .conBox1 li.on{background-color: #ccc; transition: 1s all;}                 
-.main01 .conBox1 li a{font-size: 14px;  color: #606060;}                 
+.main01 .conBox1 li.on{background-color: #569aff; transition: 1s all;}                 
+.main01 .conBox1 li a{font-size: 14px;  color: #606060;} 
+.main01 .conBox1 li a.on{ transition: all 0.5s;
+    color: #f8f8f8;
+    ;}                
 .con2{ height: 100px;}
 .con2 li{float: left; margin-left: 20px;
             cursor: pointer;}
@@ -61,7 +77,8 @@ nav li a{ font-size: 14px;  color: #606060;}
 
 .conInfo2 li{width:450px; 
      float: left;}
-.conInfo a{color: #fcf9f9d7;}     
+.conInfo a{color: #f8f8f8;
+}     
 
 .conInfo2 ul li span{ 
         color: #606060;}
@@ -135,7 +152,7 @@ text-shadow: 3px 3px 15px white; margin-bottom: 10px;}
 text-shadow: 3px 3px 15px white;}
 .main02 .view .view_text1 span{font-size: 40px;
     color: #606060f1;
-                                text-shadow: 3px 3px 15px white;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.342);
                                 border-bottom: 5px solid #c01c1c80;}
 
 
@@ -144,39 +161,48 @@ text-shadow: 3px 3px 15px white;}
 
 .main02 .view .view_text2 {width: 400px; 
                             height: 200px; margin: 100px; padding: 1rem;
-                            font-family: sans-serif; font-weight: 600;color: #f8f8f8c5;;}
+                            font-family: sans-serif; font-weight: 600;    color: #f8f8f8;}
 .main02 .view .view_text2 p{ font-size: 25px;
-    text-shadow: 3px 3px 15px white; margin: 10px 0;}
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.5); margin: 10px 0;}
 .main02 .view .view_text2 h1{ font-size: 30px;
-    text-shadow: 3px 3px 15px white;}
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.562);}
 .main02 .view .view_text2 span{font-size: 30px;
     
     font-weight: 600;}
 .main02 .view .view_text2 a{display: inline-block;
     width: 240px; height: 70px; line-height: 70px;
-                border:2px solid #ccc;  text-align: center;
+                border:3px solid #f8f8f8;  text-align: center;
                 font-size: 35px; text-shadow: 3px 3px 15px white;
             margin-top: 30px; font-family: sans-serif;
-            color: #f8f8f8ad;}   
+
+            color: #f8f8f8; ;}   
 
 
-.main02 .view .view_text3 {width: 900px; color: #575454c2;
+.main02 .view .view_text3 {width: 900px; 
                 height: 200px; margin: 100px auto; padding: 1rem;
                 text-align: right;
                 font-family: sans-serif; font-weight: 600;}
 .main02 .view .view_text3 p{ font-size: 25px; margin-top: 10px;
+    color: #25242496; 
+    text-shadow: 3px 3px 15px #ccc;
             ; margin-bottom: 10px;}
  .main02 .view .view_text3 h1{ font-size: 35px;
-    color: #5754548a; 
+    text-shadow: 3px 3px 15px #ccc;
+
+    color: #252424a9; 
            }
 .main02 .view .view_text3 span{font-size: 45px;
+    text-shadow: 3px 3px 15px #ccc;
+
+    color: #252424d5; 
 }
 .main02 .view .view_text3 a{display: inline-block;
     width: 240px; height: 70px; line-height: 70px;
-                border:2px solid rgb(75, 87, 63);;  text-align: center;
-                font-size: 35px; text-shadow: 3px 3px 15px white;
+             text-align: center;
+                font-size: 35px;
+                border: 2px solid white;
             margin-top: 30px; font-family: sans-serif;
-            color: #575454; }   
+            color: rgba(0, 0, 0, 0.562);}   
             
 
 
@@ -240,6 +266,7 @@ position: relative;}
 
 .main03_btn{ text-align: center;}
 .main03_btn li{width: 50px; height: 10px; margin-left: 10px;
+    border-radius: 5px;
              display: inline-block; background-color: rgb(88, 79, 79);
               }
 .main03_btn li.on{background-color: #569aff;}
@@ -296,11 +323,12 @@ font-weight: bold;}
 
 .main04_btn{ text-align: center;}
 .main04_btn li{width: 50px; height: 10px; margin-left: 10px;
+    border-radius: 5px;
     display: inline-block; background-color: rgb(88, 79, 79);}
 .main04_btn li.on{background-color: #569aff;}
 
 
-.main05 {width: 1200px; height: 100vh; 
+.main05 {width: 1200px; height: 50vh; 
             margin: 0 auto; }
 .main05 .main05_info {}
 .main05 .main05_info h1{text-align: center;
@@ -346,3 +374,15 @@ font-weight: bold;}
 
 
      
+footer{width: 1200px; margin: 0 auto;
+                    margin-top: 200px;
+                    color: #606060;
+    height: 300px;
+    font-size: 12px;
+    border-top: 1px solid #606060;;
+            }
+footer .footer_text{width: 1100px; margin: 0 auto;
+                    
+                        height: 300px;}
+footer .footer_text p{margin: 20px;}
+footer .footer_text span{padding: 20px;}
